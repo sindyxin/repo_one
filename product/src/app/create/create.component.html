@@ -1,0 +1,10 @@
+<div id="create">
+  <h1>Create a New Product</h1>
+  <form (submit)="addProduct()">
+    <p>Title <input type="text" name="title" [(ngModel)]="newProduct.title"></p>
+    <p>Price <input type="text" name="price" [(ngModel)]="newProduct.price"></p>
+    <p>Image <input type="text" name="img" [(ngModel)]="newProduct.img"></p>
+    <p><button type="submit">Create</button><button [routerLink]="['/products']">Cancel</button></p>
+  
+  </form>
+</div>

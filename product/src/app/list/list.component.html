@@ -1,0 +1,12 @@
+
+<div id="list" style="text-align: center;">
+  <h1>Products List</h1>
+  <div *ngFor="let product of products" id="products">
+    <img src="{{product.img}}" style="width:150;height:140px;">
+    <p>{{product.title}}</p>
+    <p>{{product.price}}</p>
+    <p><button [routerLink]="['/products/edit/'+product._id]">Edit</button><button (click)="delete(product._id)">Delete</button></p>
+  
+  </div>
+</div>
+
